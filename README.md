@@ -7,4 +7,5 @@ ainsi que  des intelligences artificielles simples pour y jouer.
 
 ### Menbres du projet 
 
-nom prénom 
+Mahoui Sonia 
+G1.2
