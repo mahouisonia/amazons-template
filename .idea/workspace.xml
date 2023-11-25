@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f0ac77af-9bf1-47cc-a9a0-0dd0e10750b5" name="Changes" comment="je viens de finir la méthode isEmpty, j'ai oublié de faire des commit pour chaque méthodes faites, je travaillais plutot par tache. je le ferai prochainement">
+    <list default="true" id="f0ac77af-9bf1-47cc-a9a0-0dd0e10750b5" name="Changes" comment="je viens de modifier la méthode isOutBounds de la classe position">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/board/MatrixBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/board/MatrixBoard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/board/Position.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/board/Position.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -237,7 +236,7 @@
       <workItem from="1699622689482" duration="14966000" />
       <workItem from="1700830090472" duration="9852000" />
       <workItem from="1700917505088" duration="1909000" />
-      <workItem from="1700923692470" duration="4328000" />
+      <workItem from="1700923692470" duration="5120000" />
     </task>
     <task id="LOCAL-00001" summary="cc">
       <option name="closed" value="true" />
@@ -263,7 +262,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700926272881</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="je viens de modifier la méthode isOutBounds de la classe position">
+      <option name="closed" value="true" />
+      <created>1700928075850</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1700928075850</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -273,6 +280,7 @@
     <MESSAGE value="cc" />
     <MESSAGE value="fin de la 2e tache" />
     <MESSAGE value="je viens de finir la méthode isEmpty, j'ai oublié de faire des commit pour chaque méthodes faites, je travaillais plutot par tache. je le ferai prochainement" />
-    <option name="LAST_COMMIT_MESSAGE" value="je viens de finir la méthode isEmpty, j'ai oublié de faire des commit pour chaque méthodes faites, je travaillais plutot par tache. je le ferai prochainement" />
+    <MESSAGE value="je viens de modifier la méthode isOutBounds de la classe position" />
+    <option name="LAST_COMMIT_MESSAGE" value="je viens de modifier la méthode isOutBounds de la classe position" />
   </component>
 </project>

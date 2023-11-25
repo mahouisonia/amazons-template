@@ -35,9 +35,9 @@ public class MatrixBoard implements Board{
 
     @Override
     public boolean isOutOfBoard(Position position) {
+        int numberOfColumns = board.length;
+        int numberOfRows = board[0].length;
+       return position.isOutOfBounds(numberOfColumns, numberOfRows);
 
-
-
-        return false;
     }
 }
