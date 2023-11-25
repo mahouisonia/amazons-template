@@ -28,8 +28,7 @@ public class Position implements Serializable {
 
 
     public boolean isOutOfBounds(int numberOfColumns, int numberOfRows) {
-        Position position = new Position(numberOfColumns - 1, numberOfRows - 1);
-        if (this.getX() != position.getX() && this.getY() != position.getY())
+        if(this.getX() < 0 || this.getX() > numberOfColumns || this.getY() < 0 || this.getY()> numberOfRows)
             return true;
         return false;
     }
