@@ -5,8 +5,9 @@ import amazons.board.Position;
 import amazons.player.PlayerID;
 
 public class ArrowFigure implements Figure{
-    public static final ArrowFigure ARROW_FIGURE = new ArrowFigure();
+    public static ArrowFigure ARROW_FIGURE = new ArrowFigure();
     private ArrowFigure(){}
+
     @Override
     public boolean canMoveTo(Position position, Board board) {
         return false;
