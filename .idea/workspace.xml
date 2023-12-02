@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f0ac77af-9bf1-47cc-a9a0-0dd0e10750b5" name="Changes" comment="modification du package de la classe de la tahe3">
+    <list default="true" id="f0ac77af-9bf1-47cc-a9a0-0dd0e10750b5" name="Changes" comment="implémentation de getAccessiblePositions">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/figures/Amazon.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/figures/Amazon.java" afterDir="false" />
     </list>
@@ -239,7 +239,7 @@
       <workItem from="1700923692470" duration="7086000" />
       <workItem from="1701512318241" duration="3081000" />
       <workItem from="1701521072924" duration="4727000" />
-      <workItem from="1701526594475" duration="1141000" />
+      <workItem from="1701526594475" duration="3568000" />
     </task>
     <task id="LOCAL-00001" summary="cc">
       <option name="closed" value="true" />
@@ -305,7 +305,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700930426140</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="implémentation de getAccessiblePositions">
+      <option name="closed" value="true" />
+      <created>1701527769488</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1701527769489</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -320,6 +328,7 @@
     <MESSAGE value="fin de la creation de classe + attribut et constructeur (tache4)" />
     <MESSAGE value="fin (tache4)" />
     <MESSAGE value="modification du package de la classe de la tahe3" />
-    <option name="LAST_COMMIT_MESSAGE" value="modification du package de la classe de la tahe3" />
+    <MESSAGE value="implémentation de getAccessiblePositions" />
+    <option name="LAST_COMMIT_MESSAGE" value="implémentation de getAccessiblePositions" />
   </component>
 </project>

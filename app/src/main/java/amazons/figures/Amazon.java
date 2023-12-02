@@ -11,25 +11,36 @@ import java.util.List;
 
 public class Amazon extends MovableFigure implements Figure{
     Position position;
-    public Amazon(Position position){ this.position = position;}
+    PlayerID playerID;
+    public Amazon(Position position,PlayerID playerID ){ this.position = position;
+        PlayerID playerID1 = this.playerID;
+    }
     @Override
     public boolean canMoveTo(Position position, Board board) {
+        if (this.getAccessiblePositions(board).contains(position)){
+            return true;
+        }
         return false;
     }
-
     @Override
     public void moveTo(Position position, Board board) {
+        this.setPosition(position);
+        board.setFigure(position,this);
+
+
 
     }
 
     @Override
     public void setPosition(Position position) {
+        this.position = position;
+
 
     }
 
     @Override
     public PlayerID getPlayerID() {
-        return null;
+        return playerID;
     }
 
     @Override
@@ -54,14 +65,4 @@ public class Amazon extends MovableFigure implements Figure{
         return accessiblePositions;
     }
 
-
-
-
-
-
-
-
-
-        return null;
-    }
 }
