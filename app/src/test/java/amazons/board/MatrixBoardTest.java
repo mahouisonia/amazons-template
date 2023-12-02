@@ -1,12 +1,9 @@
 package amazons.board;
 
-/*
-import amazons.IllegalMoveException;
-import amazons.board.*;
-import amazons.figures.Amazon;
-import amazons.figures.Figure;
-import amazons.figures.MovableFigure;
 
+import amazons.figures.Amazon;
+
+import amazons.player.PlayerID;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import java.util.*;
@@ -14,10 +11,10 @@ import java.util.*;
 import static amazons.figures.ArrowFigure.ARROW_FIGURE;
 import static amazons.figures.EmptyFigure.EMPTY_FIGURE;
 import static org.assertj.core.api.Assertions.*;
-*/
+
 
 class MatrixBoardTest {
-/*
+
     private MatrixBoard testBoard;
     private final Random random = new Random();
     private final int NUMBER_OF_COLUMNS = 4;
@@ -43,12 +40,12 @@ class MatrixBoardTest {
 
     @BeforeEach
     void setAmazons(){
-        amazon00Player0 = new Amazon(position00,0);
-        amazon01Player0 = new Amazon(position01, 0);
-        amazon32Player0 = new Amazon(position32, 0);
-        amazon11Player1 = new Amazon(position11, 1);
-        amazon30Player1 = new Amazon(position30, 1);
-        amazon12Player1 = new Amazon(position12, 1);
+        amazon00Player0 = new Amazon(position00, PlayerID.PLAYER_ZERO);
+        amazon01Player0 = new Amazon(position01, PlayerID.PLAYER_ZERO);
+        amazon32Player0 = new Amazon(position32, PlayerID.PLAYER_ZERO);
+        amazon11Player1 = new Amazon(position11, PlayerID.PLAYER_ONE);
+        amazon30Player1 = new Amazon(position30, PlayerID.PLAYER_ONE);
+        amazon12Player1 = new Amazon(position12, PlayerID.PLAYER_ONE);
     }
 
     @BeforeEach
@@ -77,7 +74,7 @@ class MatrixBoardTest {
         MatrixBoard board  = new MatrixBoard(2,3);
         assertThat(board.getNumberOfColumns()).isEqualTo(2);
     }
-
+/*
     @Test
     void testInitializeEmpty() {
         testBoard.fill(new EmptyFigureGenerator());
@@ -85,6 +82,7 @@ class MatrixBoardTest {
         assertThat(testBoard.getFigure(new Position(1,1))).isSameAs(EMPTY_FIGURE);
         assertThat(testBoard.getFigure(new Position(3,2))).isSameAs(EMPTY_FIGURE);
     }
+
     @Test
     void testInitializePreset() {
         setAmazons();
@@ -232,11 +230,20 @@ class MatrixBoardTest {
                 .doesNotHaveDuplicates()
                 .containsExactlyInAnyOrder(amazon00Player0, amazon01Player0, amazon32Player0);
     }
-    @Test
+    */@Test
     void testIsEmpty() {
         testBoard.setFigure(position32,EMPTY_FIGURE);
         assertThat(testBoard.isEmpty(position32)).isTrue();
     }
+    @Test
+    void testIsOutOfBoard() {
+        Position insidePosition = new Position(2, 2);
+        Position outsidePosition = new Position(5, 5);
 
- */
+        assertThat(testBoard.isOutOfBoard(insidePosition)).isFalse();
+        assertThat(testBoard.isOutOfBoard(outsidePosition)).isTrue();
+    }
+
+
+
 }

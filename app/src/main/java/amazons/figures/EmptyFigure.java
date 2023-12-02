@@ -5,7 +5,7 @@ import amazons.board.Position;
 import amazons.player.PlayerID;
 
 public class EmptyFigure implements Figure{
-    public static final EmptyFigure EMTPY_FIGURE = new EmptyFigure();  // Attribut statique pour représenter une instance unique d'EmptyFigure
+    public static final EmptyFigure EMPTY_FIGURE = new EmptyFigure();  // Attribut statique pour représenter une instance unique d'EmptyFigure
     private EmptyFigure(){};// Constructeur privé, car on ne veut qu'une seule instance d'EmptyFigure
     @Override
     public boolean canMoveTo(Position position, Board board) {

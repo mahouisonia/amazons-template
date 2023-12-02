@@ -2,7 +2,6 @@ package amazons.figures;
 
 import amazons.board.Board;
 import amazons.board.CardinalDirection;
-import amazons.board.MatrixBoard;
 import amazons.board.Position;
 import amazons.player.PlayerID;
 
@@ -12,8 +11,9 @@ import java.util.List;
 public class Amazon extends MovableFigure implements Figure{
     Position position;
     PlayerID playerID;
-    public Amazon(Position position,PlayerID playerID ){ this.position = position;
-        PlayerID playerID1 = this.playerID;
+    public Amazon(Position position, PlayerID playerID ){
+        this.position = position;
+        this.playerID= playerID;
     }
     @Override
     public boolean canMoveTo(Position position, Board board) {

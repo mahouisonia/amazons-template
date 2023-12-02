@@ -5,8 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f0ac77af-9bf1-47cc-a9a0-0dd0e10750b5" name="Changes" comment="génération d'exception pour la classe EmptyFigure">
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/figures/ArrowFigure.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/figures/ArrowFigure.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/board/MatrixBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/board/MatrixBoard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/board/Position.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/board/Position.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/figures/Amazon.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/figures/Amazon.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/figures/EmptyFigure.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/figures/EmptyFigure.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/java/amazons/board/MatrixBoardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/amazons/board/MatrixBoardTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,8 +97,8 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Gradle.PositionTest.testIsOutOfBounds">
-    <configuration name="PositionTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.MatrixBoardTest.testIsOutOfBoard">
+    <configuration name="MatrixBoardTest.testGetNumberOfColumns" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -106,7 +111,7 @@
           <list>
             <option value=":app:test" />
             <option value="--tests" />
-            <option value="&quot;amazons.board.PositionTest&quot;" />
+            <option value="&quot;amazons.board.MatrixBoardTest.testGetNumberOfColumns&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -117,7 +122,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="PositionTest.testEquals" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="MatrixBoardTest.testGetNumberOfRows" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -130,7 +135,7 @@
           <list>
             <option value=":app:test" />
             <option value="--tests" />
-            <option value="&quot;amazons.board.PositionTest.testEquals&quot;" />
+            <option value="&quot;amazons.board.MatrixBoardTest.testGetNumberOfRows&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -141,7 +146,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="PositionTest.testIsOutOfBounds" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="MatrixBoardTest.testGetSetFigure" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -154,7 +159,7 @@
           <list>
             <option value=":app:test" />
             <option value="--tests" />
-            <option value="&quot;amazons.board.PositionTest.testIsOutOfBounds&quot;" />
+            <option value="&quot;amazons.board.MatrixBoardTest.testGetSetFigure&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -165,7 +170,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="PositionTest.testNext" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="MatrixBoardTest.testIsEmpty" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -178,7 +183,7 @@
           <list>
             <option value=":app:test" />
             <option value="--tests" />
-            <option value="&quot;amazons.board.PositionTest.testNext&quot;" />
+            <option value="&quot;amazons.board.MatrixBoardTest.testIsEmpty&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -189,7 +194,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="PositionTest.testToString" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="MatrixBoardTest.testIsOutOfBoard" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -202,7 +207,7 @@
           <list>
             <option value=":app:test" />
             <option value="--tests" />
-            <option value="&quot;amazons.board.PositionTest.testToString&quot;" />
+            <option value="&quot;amazons.board.MatrixBoardTest.testIsOutOfBoard&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -215,11 +220,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.PositionTest.testIsOutOfBounds" />
-        <item itemvalue="Gradle.PositionTest" />
-        <item itemvalue="Gradle.PositionTest.testNext" />
-        <item itemvalue="Gradle.PositionTest.testEquals" />
-        <item itemvalue="Gradle.PositionTest.testToString" />
+        <item itemvalue="Gradle.MatrixBoardTest.testIsOutOfBoard" />
+        <item itemvalue="Gradle.MatrixBoardTest.testIsEmpty" />
+        <item itemvalue="Gradle.MatrixBoardTest.testGetSetFigure" />
+        <item itemvalue="Gradle.MatrixBoardTest.testGetNumberOfRows" />
+        <item itemvalue="Gradle.MatrixBoardTest.testGetNumberOfColumns" />
       </list>
     </recent_temporary>
   </component>
@@ -240,6 +245,8 @@
       <workItem from="1701512318241" duration="3081000" />
       <workItem from="1701521072924" duration="4727000" />
       <workItem from="1701526594475" duration="6082000" />
+      <workItem from="1701547900259" duration="2137000" />
+      <workItem from="1701552008573" duration="1941000" />
     </task>
     <task id="LOCAL-00001" summary="cc">
       <option name="closed" value="true" />
