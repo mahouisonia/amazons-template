@@ -14,7 +14,8 @@ public class ArrowFigure implements Figure{
     }
 
     @Override
-    public void moveTo(Position position, Board board) {
+    public void moveTo(Position position, Board board) throws IllegalAccessException {
+        throw new IllegalAccessException(" Attention ! une flèche ne peut pas être déplacée");
 
     }
 

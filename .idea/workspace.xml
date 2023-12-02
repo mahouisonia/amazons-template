@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f0ac77af-9bf1-47cc-a9a0-0dd0e10750b5" name="Changes" comment="fin de la tache 5">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/amazons/IllegalMoveException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="f0ac77af-9bf1-47cc-a9a0-0dd0e10750b5" name="Changes" comment="génération d'exception pour la classe EmptyFigure">
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/figures/ArrowFigure.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/figures/ArrowFigure.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/figures/EmptyFigure.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/figures/EmptyFigure.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -240,7 +239,7 @@
       <workItem from="1700923692470" duration="7086000" />
       <workItem from="1701512318241" duration="3081000" />
       <workItem from="1701521072924" duration="4727000" />
-      <workItem from="1701526594475" duration="5703000" />
+      <workItem from="1701526594475" duration="6082000" />
     </task>
     <task id="LOCAL-00001" summary="cc">
       <option name="closed" value="true" />
@@ -322,7 +321,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701530192056</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="génération d'exception pour la classe EmptyFigure">
+      <option name="closed" value="true" />
+      <created>1701533319798</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1701533319798</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -339,6 +346,7 @@
     <MESSAGE value="modification du package de la classe de la tahe3" />
     <MESSAGE value="implémentation de getAccessiblePositions" />
     <MESSAGE value="fin de la tache 5" />
-    <option name="LAST_COMMIT_MESSAGE" value="fin de la tache 5" />
+    <MESSAGE value="génération d'exception pour la classe EmptyFigure" />
+    <option name="LAST_COMMIT_MESSAGE" value="génération d'exception pour la classe EmptyFigure" />
   </component>
 </project>
