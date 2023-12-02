@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f0ac77af-9bf1-47cc-a9a0-0dd0e10750b5" name="Changes" comment="fin (tache4)">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/amazons/figures/Amazon.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/amazons/figures/ArrowFigure.java" afterDir="false" />
+    <list default="true" id="f0ac77af-9bf1-47cc-a9a0-0dd0e10750b5" name="Changes" comment="modification du package de la classe de la tahe3">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/java/amazons/figures/ArrowFigure.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/figures/Amazon.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/figures/Amazon.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -238,7 +236,10 @@
       <workItem from="1699622689482" duration="14966000" />
       <workItem from="1700830090472" duration="9852000" />
       <workItem from="1700917505088" duration="1909000" />
-      <workItem from="1700923692470" duration="6672000" />
+      <workItem from="1700923692470" duration="7086000" />
+      <workItem from="1701512318241" duration="3081000" />
+      <workItem from="1701521072924" duration="4727000" />
+      <workItem from="1701526594475" duration="1141000" />
     </task>
     <task id="LOCAL-00001" summary="cc">
       <option name="closed" value="true" />
@@ -296,7 +297,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700929475945</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="modification du package de la classe de la tahe3">
+      <option name="closed" value="true" />
+      <created>1700930426140</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1700930426140</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -310,6 +319,7 @@
     <MESSAGE value="je viens de modifier la méthode isOutBounds de la classe MatrixBoard et donc la 3e tache" />
     <MESSAGE value="fin de la creation de classe + attribut et constructeur (tache4)" />
     <MESSAGE value="fin (tache4)" />
-    <option name="LAST_COMMIT_MESSAGE" value="fin (tache4)" />
+    <MESSAGE value="modification du package de la classe de la tahe3" />
+    <option name="LAST_COMMIT_MESSAGE" value="modification du package de la classe de la tahe3" />
   </component>
 </project>
