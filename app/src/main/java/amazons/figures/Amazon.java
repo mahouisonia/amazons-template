@@ -9,10 +9,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Amazon extends MovableFigure implements Figure{
-    Position position;
+    public Position getPosition() {
+        return position;
+    }
+
+    private Position position;
     PlayerID playerID;
-    public Amazon(Position position, PlayerID playerID ){
-        this.position = position;
+    public Amazon(Position position, PlayerID playerID ){ this.position = position;
         this.playerID= playerID;
     }
     @Override

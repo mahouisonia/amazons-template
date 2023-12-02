@@ -4,14 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f0ac77af-9bf1-47cc-a9a0-0dd0e10750b5" name="Changes" comment="génération d'exception pour la classe EmptyFigure">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="f0ac77af-9bf1-47cc-a9a0-0dd0e10750b5" name="Changes" comment="Classe MatrixBoard testée">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/board/MatrixBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/board/MatrixBoard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/board/Position.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/board/Position.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/figures/Amazon.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/figures/Amazon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/figures/EmptyFigure.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/figures/EmptyFigure.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/java/amazons/board/MatrixBoardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/amazons/board/MatrixBoardTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/java/amazons/figures/AmazonTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/amazons/figures/AmazonTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,8 +93,8 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Gradle.MatrixBoardTest.testIsOutOfBoard">
-    <configuration name="MatrixBoardTest.testGetNumberOfColumns" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.AmazonTest.testGetPosition">
+    <configuration name="AmazonTest.testCanMoveTo" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -111,7 +107,7 @@
           <list>
             <option value=":app:test" />
             <option value="--tests" />
-            <option value="&quot;amazons.board.MatrixBoardTest.testGetNumberOfColumns&quot;" />
+            <option value="&quot;amazons.figures.AmazonTest.testCanMoveTo&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -122,7 +118,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="MatrixBoardTest.testGetNumberOfRows" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="AmazonTest.testGetAccessiblePositions" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -135,7 +131,7 @@
           <list>
             <option value=":app:test" />
             <option value="--tests" />
-            <option value="&quot;amazons.board.MatrixBoardTest.testGetNumberOfRows&quot;" />
+            <option value="&quot;amazons.figures.AmazonTest.testGetAccessiblePositions&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -146,7 +142,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="MatrixBoardTest.testGetSetFigure" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="AmazonTest.testGetPlayerID" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -159,7 +155,7 @@
           <list>
             <option value=":app:test" />
             <option value="--tests" />
-            <option value="&quot;amazons.board.MatrixBoardTest.testGetSetFigure&quot;" />
+            <option value="&quot;amazons.figures.AmazonTest.testGetPlayerID&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -170,7 +166,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="MatrixBoardTest.testIsEmpty" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="AmazonTest.testGetPosition" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -183,7 +179,7 @@
           <list>
             <option value=":app:test" />
             <option value="--tests" />
-            <option value="&quot;amazons.board.MatrixBoardTest.testIsEmpty&quot;" />
+            <option value="&quot;amazons.figures.AmazonTest.testGetPosition&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -194,7 +190,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="MatrixBoardTest.testIsOutOfBoard" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="AmazonTest.testSetPosition" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -207,7 +203,7 @@
           <list>
             <option value=":app:test" />
             <option value="--tests" />
-            <option value="&quot;amazons.board.MatrixBoardTest.testIsOutOfBoard&quot;" />
+            <option value="&quot;amazons.figures.AmazonTest.testSetPosition&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -220,11 +216,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.MatrixBoardTest.testIsOutOfBoard" />
-        <item itemvalue="Gradle.MatrixBoardTest.testIsEmpty" />
-        <item itemvalue="Gradle.MatrixBoardTest.testGetSetFigure" />
-        <item itemvalue="Gradle.MatrixBoardTest.testGetNumberOfRows" />
-        <item itemvalue="Gradle.MatrixBoardTest.testGetNumberOfColumns" />
+        <item itemvalue="Gradle.AmazonTest.testGetPosition" />
+        <item itemvalue="Gradle.AmazonTest.testCanMoveTo" />
+        <item itemvalue="Gradle.AmazonTest.testSetPosition" />
+        <item itemvalue="Gradle.AmazonTest.testGetPlayerID" />
+        <item itemvalue="Gradle.AmazonTest.testGetAccessiblePositions" />
       </list>
     </recent_temporary>
   </component>
@@ -246,7 +242,7 @@
       <workItem from="1701521072924" duration="4727000" />
       <workItem from="1701526594475" duration="6082000" />
       <workItem from="1701547900259" duration="2137000" />
-      <workItem from="1701552008573" duration="1941000" />
+      <workItem from="1701552008573" duration="6852000" />
     </task>
     <task id="LOCAL-00001" summary="cc">
       <option name="closed" value="true" />
@@ -336,7 +332,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701533319798</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Classe MatrixBoard testée">
+      <option name="closed" value="true" />
+      <created>1701554209642</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1701554209642</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -354,6 +358,7 @@
     <MESSAGE value="implémentation de getAccessiblePositions" />
     <MESSAGE value="fin de la tache 5" />
     <MESSAGE value="génération d'exception pour la classe EmptyFigure" />
-    <option name="LAST_COMMIT_MESSAGE" value="génération d'exception pour la classe EmptyFigure" />
+    <MESSAGE value="Classe MatrixBoard testée" />
+    <option name="LAST_COMMIT_MESSAGE" value="Classe MatrixBoard testée" />
   </component>
 </project>
