@@ -14,8 +14,9 @@ public class EmptyFigure implements Figure{
     }
 
     @Override
-    public void moveTo(Position position, Board board) {
-        // Ne rien faire, car une case vide ne peut pas être déplacée
+    public void moveTo(Position position, Board board) throws IllegalAccessException {
+        throw new IllegalAccessException(" Attention ! une case vide ne peut pas être déplacée");
+        //
 
     }
 
