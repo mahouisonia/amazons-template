@@ -3,6 +3,7 @@ package amazons.board;
 import javafx.scene.input.DataFormat;
 
 import java.io.Serializable;
+import java.util.Objects;
 
 //TODO complete the code this class and its documentation
 
@@ -57,5 +58,10 @@ public class Position implements Serializable {
         // Comparaison des attributs
         return this.getX() == pos.getX() && this.getY() == pos.getY();
     }
+    @Override
+    public int hashCode (){
+        return Objects.hash(x,y);
+    }
+
 }
 

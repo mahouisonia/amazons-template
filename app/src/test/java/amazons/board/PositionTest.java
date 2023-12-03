@@ -66,7 +66,7 @@ class PositionTest {
 
 
 
-/*
+
     @Test
     void testHashCode() {
         // two positions must have same hash code if and
@@ -74,7 +74,7 @@ class PositionTest {
         assertThat(position00.hashCode()).isNotEqualTo(position01.hashCode());
         assertThat(position00.hashCode()).isEqualTo(new Position(0,0).hashCode());
     }
-*/
+
 
 
 }

@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f0ac77af-9bf1-47cc-a9a0-0dd0e10750b5" name="Changes" comment="debut de la tache9: implémentation de nextFigure() dans EmptyFigureGenerator">
+    <list default="true" id="f0ac77af-9bf1-47cc-a9a0-0dd0e10750b5" name="Changes" comment="fin de la tache9">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/amazons/board/MapBoard.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/board/EmptyFigureGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/board/EmptyFigureGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/board/FigureGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/board/FigureGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/board/MatrixBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/board/MatrixBoard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/board/Position.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/board/Position.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/java/amazons/board/PositionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/amazons/board/PositionTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,55 +94,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Gradle.MatrixBoardTest.testMoveAmazonFigure">
-    <configuration name="AmazonTest.testCanMoveTo" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":app:test" />
-            <option value="--tests" />
-            <option value="&quot;amazons.figures.AmazonTest.testCanMoveTo&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="AmazonTest.testGetPosition" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":app:test" />
-            <option value="--tests" />
-            <option value="&quot;amazons.figures.AmazonTest.testGetPosition&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Gradle.PositionTest">
     <configuration name="MatrixBoardTest.testMoveAmazonFigure" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -215,13 +167,61 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
+    <configuration name="PositionTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":app:test" />
+            <option value="--tests" />
+            <option value="&quot;amazons.board.PositionTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="PositionTest.testHashCode" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":app:test" />
+            <option value="--tests" />
+            <option value="&quot;amazons.board.PositionTest.testHashCode&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.PositionTest" />
+        <item itemvalue="Gradle.PositionTest.testHashCode" />
         <item itemvalue="Gradle.MatrixBoardTest.testMoveAmazonFigure" />
         <item itemvalue="Gradle.MatrixBoardTest.testMoveEmptyFigure" />
         <item itemvalue="Gradle.MatrixBoardTest.testMoveArrowFigure" />
-        <item itemvalue="Gradle.AmazonTest.testGetPosition" />
-        <item itemvalue="Gradle.AmazonTest.testCanMoveTo" />
       </list>
     </recent_temporary>
   </component>
@@ -246,7 +246,9 @@
       <workItem from="1701552008573" duration="7086000" />
       <workItem from="1701602649002" duration="10616000" />
       <workItem from="1701613681331" duration="1069000" />
-      <workItem from="1701616575063" duration="831000" />
+      <workItem from="1701616575063" duration="2757000" />
+      <workItem from="1701622385118" duration="830000" />
+      <workItem from="1701624828303" duration="1603000" />
     </task>
     <task id="LOCAL-00001" summary="cc">
       <option name="closed" value="true" />
@@ -368,7 +370,23 @@
       <option name="project" value="LOCAL" />
       <updated>1701612741794</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="fin de la méthode fill">
+      <option name="closed" value="true" />
+      <created>1701617497258</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1701617497258</updated>
+    </task>
+    <task id="LOCAL-00017" summary="fin de la tache9">
+      <option name="closed" value="true" />
+      <created>1701617739681</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1701617739681</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -390,6 +408,8 @@
     <MESSAGE value="Classe Amazon testée" />
     <MESSAGE value="j'ai impléménté les deux méthodes de la tache8 dans la classe MatrixBoard et j'ai au meme temps réalisé les tests jusqu'à ce qu'ils marchent" />
     <MESSAGE value="debut de la tache9: implémentation de nextFigure() dans EmptyFigureGenerator" />
-    <option name="LAST_COMMIT_MESSAGE" value="debut de la tache9: implémentation de nextFigure() dans EmptyFigureGenerator" />
+    <MESSAGE value="fin de la méthode fill" />
+    <MESSAGE value="fin de la tache9" />
+    <option name="LAST_COMMIT_MESSAGE" value="fin de la tache9" />
   </component>
 </project>
