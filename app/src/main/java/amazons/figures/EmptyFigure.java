@@ -1,5 +1,6 @@
 package amazons.figures;
 
+import amazons.IllegalMoveException;
 import amazons.board.Board;
 import amazons.board.Position;
 import amazons.player.PlayerID;
@@ -14,8 +15,8 @@ public class EmptyFigure implements Figure{
     }
 
     @Override
-    public void moveTo(Position position, Board board) throws IllegalAccessException {
-        throw new IllegalAccessException(" Attention ! une case vide ne peut pas être déplacée");
+    public void moveTo(Position position, Board board) throws IllegalMoveException {
+        throw new IllegalMoveException(" Attention ! une case vide ne peut pas être déplacée");
 
     }
 

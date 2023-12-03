@@ -1,7 +1,11 @@
 package amazons.board;
 
+import amazons.IllegalMoveException;
 import amazons.figures.EmptyFigure;
 import amazons.figures.Figure;
+
+import static amazons.figures.ArrowFigure.ARROW_FIGURE;
+import static amazons.figures.EmptyFigure.EMPTY_FIGURE;
 
 public class MatrixBoard implements Board{
     private final Figure[][] board;
@@ -23,7 +27,7 @@ public class MatrixBoard implements Board{
         this.board = new Figure[numberOfColumns][numberOfRows];
         for (int i = 0; i < numberOfColumns; i++) {
             for (int j = 0; j < numberOfRows; j++) {
-                board[i][j] = EmptyFigure.EMPTY_FIGURE;
+                board[i][j] = EMPTY_FIGURE;
 
             }
         }
@@ -41,7 +45,7 @@ public class MatrixBoard implements Board{
 
     @Override
     public boolean isEmpty(Position position) {
-        if(board[position.getX()][position.getY()] == EmptyFigure.EMPTY_FIGURE){
+        if(board[position.getX()][position.getY()] == EMPTY_FIGURE){
             return true;
         }
          return false;
@@ -54,4 +58,34 @@ public class MatrixBoard implements Board{
        return position.isOutOfBounds(numberOfColumns, numberOfRows);
 
     }
+
+    @Override
+    public void moveFigure(Position startPosition, Position dstPosition) throws IllegalMoveException {
+        Figure figureToMove = this.getFigure(startPosition);
+
+        if (figureToMove == ARROW_FIGURE || figureToMove == EMPTY_FIGURE) {
+            throw new IllegalMoveException("Illegal move from " + startPosition + " to " + dstPosition);
+        } else if (figureToMove.canMoveTo(dstPosition, this)) {
+            figureToMove.moveTo(dstPosition, this);
+            this.setFigure(startPosition, EMPTY_FIGURE);
+        } else {
+            throw new IllegalMoveException("Illegal move from " + startPosition + " to " + dstPosition);
+        }
+    }
+
+    @Override
+    public void shootArrow(Position startPosition, Position arrowDstPosition) throws IllegalMoveException {
+        Figure figureShootArrow = this.getFigure(startPosition);
+
+        if (figureShootArrow == EMPTY_FIGURE || figureShootArrow == ARROW_FIGURE) {
+            throw new IllegalMoveException("You cannot shoot an arrow from " + startPosition);
+        } else {
+            if (figureShootArrow.canMoveTo(arrowDstPosition, this)) {
+                this.setFigure(arrowDstPosition, ARROW_FIGURE);
+            } else {
+                throw new IllegalMoveException("Illegal arrow shot from " + startPosition + " to " + arrowDstPosition);
+            }
+        }
+    }
+
 }
