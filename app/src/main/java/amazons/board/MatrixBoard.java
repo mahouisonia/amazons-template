@@ -25,12 +25,8 @@ public class MatrixBoard implements Board{
         this.numberOfColumns = numberOfColumns;
         this.numberOfRows = numberOfRows;
         this.board = new Figure[numberOfColumns][numberOfRows];
-        for (int i = 0; i < numberOfColumns; i++) {
-            for (int j = 0; j < numberOfRows; j++) {
-                board[i][j] = EMPTY_FIGURE;
+        fill(new EmptyFigureGenerator());
 
-            }
-        }
     }
 
     @Override

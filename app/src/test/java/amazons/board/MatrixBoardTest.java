@@ -147,7 +147,7 @@ class MatrixBoardTest {
         assertThat(testBoard.getFigure(position00)).isSameAs(EMPTY_FIGURE);
         assertThat(testBoard.getFigure(position11)).isSameAs(amazon12Player1);
     }
-}
+
 /*
     @Test
     void testToString() {
@@ -231,6 +231,8 @@ class MatrixBoardTest {
                 .doesNotHaveDuplicates()
                 .containsExactlyInAnyOrder(amazon00Player0, amazon01Player0, amazon32Player0);
     }
+
+ */
     @Test
     void testIsEmpty() {
         testBoard.setFigure(position32,EMPTY_FIGURE);
@@ -248,4 +250,3 @@ class MatrixBoardTest {
 
 
 }
-*/
