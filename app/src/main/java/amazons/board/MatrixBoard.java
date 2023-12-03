@@ -76,7 +76,6 @@ public class MatrixBoard implements Board{
     @Override
     public void shootArrow(Position startPosition, Position arrowDstPosition) throws IllegalMoveException {
         Figure figureShootArrow = this.getFigure(startPosition);
-
         if (figureShootArrow == EMPTY_FIGURE || figureShootArrow == ARROW_FIGURE) {
             throw new IllegalMoveException("You cannot shoot an arrow from " + startPosition);
         } else {
@@ -86,6 +85,11 @@ public class MatrixBoard implements Board{
                 throw new IllegalMoveException("Illegal arrow shot from " + startPosition + " to " + arrowDstPosition);
             }
         }
+    }
+
+    @Override
+    public void fill(FigureGenerator generator) {
+
     }
 
 }

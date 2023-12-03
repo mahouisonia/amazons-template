@@ -54,7 +54,7 @@ public interface Board {
      * at position {@code startPosition} or it is not legal for the amazon to shoot an arrow to {@code dstPosition}
      */
     void shootArrow(Position startPosition, Position arrowDstPosition) throws IllegalMoveException;
-
+    void fill(FigureGenerator generator);
 
 
 
