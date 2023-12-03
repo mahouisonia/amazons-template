@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f0ac77af-9bf1-47cc-a9a0-0dd0e10750b5" name="Changes" comment="j'ai impléménté les deux méthodes de la tache8 dans la classe MatrixBoard et j'ai au meme temps réalisé les tests jusqu'à ce qu'ils marchent">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/amazons/board/EmptyFigureGenerator.java" afterDir="false" />
+    <list default="true" id="f0ac77af-9bf1-47cc-a9a0-0dd0e10750b5" name="Changes" comment="debut de la tache9: implémentation de nextFigure() dans EmptyFigureGenerator">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/board/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/board/Board.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/board/EmptyFigureGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/board/EmptyFigureGenerator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/board/FigureGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/board/FigureGenerator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/board/MatrixBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/board/MatrixBoard.java" afterDir="false" />
     </list>
@@ -245,7 +244,9 @@
       <workItem from="1701526594475" duration="6082000" />
       <workItem from="1701547900259" duration="2137000" />
       <workItem from="1701552008573" duration="7086000" />
-      <workItem from="1701602649002" duration="9916000" />
+      <workItem from="1701602649002" duration="10616000" />
+      <workItem from="1701613681331" duration="1069000" />
+      <workItem from="1701616575063" duration="831000" />
     </task>
     <task id="LOCAL-00001" summary="cc">
       <option name="closed" value="true" />
@@ -359,7 +360,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701611074207</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="debut de la tache9: implémentation de nextFigure() dans EmptyFigureGenerator">
+      <option name="closed" value="true" />
+      <created>1701612741794</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1701612741794</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -380,6 +389,7 @@
     <MESSAGE value="Classe MatrixBoard testée" />
     <MESSAGE value="Classe Amazon testée" />
     <MESSAGE value="j'ai impléménté les deux méthodes de la tache8 dans la classe MatrixBoard et j'ai au meme temps réalisé les tests jusqu'à ce qu'ils marchent" />
-    <option name="LAST_COMMIT_MESSAGE" value="j'ai impléménté les deux méthodes de la tache8 dans la classe MatrixBoard et j'ai au meme temps réalisé les tests jusqu'à ce qu'ils marchent" />
+    <MESSAGE value="debut de la tache9: implémentation de nextFigure() dans EmptyFigureGenerator" />
+    <option name="LAST_COMMIT_MESSAGE" value="debut de la tache9: implémentation de nextFigure() dans EmptyFigureGenerator" />
   </component>
 </project>
