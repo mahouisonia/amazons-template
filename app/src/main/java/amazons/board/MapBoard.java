@@ -12,21 +12,20 @@ import static amazons.figures.ArrowFigure.ARROW_FIGURE;
 import static amazons.figures.EmptyFigure.EMPTY_FIGURE;
 
 public class MapBoard implements Board{
-    private Map <Position, Figure> positionFigureMap;
+    private Map<Position, Figure> boardMap;
 
-    public MapBoard(Map<Position, Figure> positionFigureMap) {
-        this.positionFigureMap = new HashMap<>();
-        this.positionFigureMap = positionFigureMap;
+    public MapBoard() {
+        this.boardMap = new HashMap<>();
     }
 
     @Override
     public void setFigure(Position position, Figure figure) {
-        positionFigureMap.put(position,figure);
+        boardMap.put(position,figure);
     }
 
     @Override
     public Figure getFigure(Position position) {
-        return positionFigureMap.get(position);
+        return boardMap.get(position);
     }
 
     @Override
@@ -36,7 +35,7 @@ public class MapBoard implements Board{
 
     @Override
     public boolean isOutOfBoard(Position position) {
-        return ! positionFigureMap.containsKey(position);
+        return ! boardMap.containsKey(position);
     }
 
     @Override
@@ -67,6 +66,10 @@ public class MapBoard implements Board{
 
     @Override
     public void fill(FigureGenerator generator) {
+            for (Position position : boardMap.keySet()) {
+                Figure figure = generator.nextFigure(position);
+                setFigure(position, figure);
+            }
 
         }
 
