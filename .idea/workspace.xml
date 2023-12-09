@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f0ac77af-9bf1-47cc-a9a0-0dd0e10750b5" name="Changes" comment="tache12 réalisée">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/amazons/board/PresetFigureGenerator.java" afterDir="false" />
+    <list default="true" id="f0ac77af-9bf1-47cc-a9a0-0dd0e10750b5" name="Changes" comment="la classe PresetFigureGenerator est réalisée">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/amazons/board/RandomFigureGenerator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/figures/MovableFigure.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/figures/MovableFigure.java" afterDir="false" />
     </list>
@@ -399,7 +399,14 @@
       <option name="project" value="LOCAL" />
       <updated>1702137804916</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="la classe PresetFigureGenerator est réalisée">
+      <created>1702139585412</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1702139585412</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -425,6 +432,7 @@
     <MESSAGE value="fin de la tache9" />
     <MESSAGE value="fin de la tache11 mais je n'ai pas compris comment implémenter la méthoe iterator dans la classe MapBoard puisqu il était mentionné dans l'énnoncé que la méthode envoie une instance de MatrixIterator" />
     <MESSAGE value="tache12 réalisée" />
-    <option name="LAST_COMMIT_MESSAGE" value="tache12 réalisée" />
+    <MESSAGE value="la classe PresetFigureGenerator est réalisée" />
+    <option name="LAST_COMMIT_MESSAGE" value="la classe PresetFigureGenerator est réalisée" />
   </component>
 </project>

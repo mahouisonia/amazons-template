@@ -9,7 +9,9 @@ import java.util.List;
 public abstract  class MovableFigure {
 
 
-    abstract  public List<Position> getAccessiblePositions(Board board);
+    abstract public List<Position> getAccessiblePositions(Board board);
 
     public abstract Object getPosition();
+
+    public abstract void setPosition(Position next);
 }
