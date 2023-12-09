@@ -5,10 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f0ac77af-9bf1-47cc-a9a0-0dd0e10750b5" name="Changes" comment="fin de la tache9">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/amazons/board/MapBoard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/amazons/board/MatrixIterator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/board/Position.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/board/Position.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/java/amazons/board/PositionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/amazons/board/PositionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/board/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/board/Board.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/board/MapBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/board/MapBoard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/board/MatrixBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/board/MatrixBoard.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,6 +95,11 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="amazons.board" />
+    </key>
+  </component>
   <component name="RunManager" selected="Gradle.PositionTest">
     <configuration name="MatrixBoardTest.testMoveAmazonFigure" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -116,7 +122,6 @@
       <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
     <configuration name="MatrixBoardTest.testMoveArrowFigure" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
@@ -140,7 +145,6 @@
       <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
     <configuration name="MatrixBoardTest.testMoveEmptyFigure" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
@@ -164,7 +168,6 @@
       <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
     <configuration name="PositionTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
@@ -188,7 +191,6 @@
       <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
     <configuration name="PositionTest.testHashCode" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
@@ -212,7 +214,6 @@
       <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
     <recent_temporary>

@@ -6,7 +6,7 @@ import amazons.figures.Figure;
 
 import java.util.Iterator;
 
-public interface Board {
+public interface Board extends Iterable <Figure> {
     /**
      * Place the given figure {@code figure} at the position {@code position}. Nothing happens if {@code position}
      * is outside this board.

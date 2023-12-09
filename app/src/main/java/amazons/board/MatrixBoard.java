@@ -4,6 +4,8 @@ import amazons.IllegalMoveException;
 import amazons.figures.EmptyFigure;
 import amazons.figures.Figure;
 
+import java.util.Iterator;
+
 import static amazons.figures.ArrowFigure.ARROW_FIGURE;
 import static amazons.figures.EmptyFigure.EMPTY_FIGURE;
 
@@ -94,4 +96,8 @@ public class MatrixBoard implements Board{
 
     }
 
+    @Override
+    public Iterator<Figure> iterator() {
+        return new MatrixIterator<>(numberOfRows, numberOfColumns, board);
+    }
 }

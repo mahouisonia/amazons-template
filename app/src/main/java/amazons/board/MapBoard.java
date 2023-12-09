@@ -5,6 +5,7 @@ import amazons.figures.EmptyFigure;
 import amazons.figures.Figure;
 
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.Map;
 
 import static amazons.figures.ArrowFigure.ARROW_FIGURE;
@@ -67,5 +68,11 @@ public class MapBoard implements Board{
     @Override
     public void fill(FigureGenerator generator) {
 
+        }
+
+
+    @Override
+    public Iterator<Figure> iterator() {
+        return null;
     }
 }
