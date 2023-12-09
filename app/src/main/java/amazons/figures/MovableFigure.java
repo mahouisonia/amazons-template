@@ -11,4 +11,5 @@ public abstract  class MovableFigure {
 
     abstract  public List<Position> getAccessiblePositions(Board board);
 
+    public abstract Object getPosition();
 }
