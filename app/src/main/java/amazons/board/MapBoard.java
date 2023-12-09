@@ -73,6 +73,11 @@ public class MapBoard implements Board{
 
         }
 
+    @Override
+    public Iterator<Position> positionIterator() {
+        return null;
+    }
+
 
     @Override
     public Iterator<Figure> iterator() {

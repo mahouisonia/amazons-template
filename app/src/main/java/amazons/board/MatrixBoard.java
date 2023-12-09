@@ -95,6 +95,10 @@ public class MatrixBoard implements Board{
 
 
     }
+    @Override
+    public Iterator<Position> positionIterator() {
+        return new PositionIterator(numberOfColumns, numberOfRows);
+    }
 
     @Override
     public Iterator<Figure> iterator() {

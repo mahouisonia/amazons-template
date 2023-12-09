@@ -55,6 +55,7 @@ public interface Board extends Iterable <Figure> {
      */
     void shootArrow(Position startPosition, Position arrowDstPosition) throws IllegalMoveException;
     void fill(FigureGenerator generator);
+    Iterator<Position> positionIterator();
 
 
 
