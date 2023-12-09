@@ -4,10 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f0ac77af-9bf1-47cc-a9a0-0dd0e10750b5" name="Changes" comment="la classe PresetFigureGenerator est réalisée">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/amazons/board/RandomFigureGenerator.java" afterDir="false" />
+    <list default="true" id="f0ac77af-9bf1-47cc-a9a0-0dd0e10750b5" name="Changes" comment="tache 13 réalisée">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/board/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/board/Board.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/board/MapBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/board/MapBoard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/board/MatrixBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/board/MatrixBoard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/board/MatrixIterator.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/board/MatrixIterator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/board/Position.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/board/Position.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/board/PositionIterator.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/board/PositionIterator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/board/PresetFigureGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/board/PresetFigureGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/board/RandomFigureGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/board/RandomFigureGenerator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/figures/MovableFigure.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/figures/MovableFigure.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/java/amazons/board/MatrixBoardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/amazons/board/MatrixBoardTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,6 +77,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
 }</component>
@@ -98,8 +109,8 @@
       <recent name="amazons.board" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.PositionTest">
-    <configuration name="MatrixBoardTest.testMoveAmazonFigure" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.MatrixBoardTest.testInitializeRandom">
+    <configuration name="AmazonTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -112,7 +123,7 @@
           <list>
             <option value=":app:test" />
             <option value="--tests" />
-            <option value="&quot;amazons.board.MatrixBoardTest.testMoveAmazonFigure&quot;" />
+            <option value="&quot;amazons.figures.AmazonTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -122,7 +133,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="MatrixBoardTest.testMoveArrowFigure" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="MatrixBoardTest.testInitializePreset" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -135,7 +146,7 @@
           <list>
             <option value=":app:test" />
             <option value="--tests" />
-            <option value="&quot;amazons.board.MatrixBoardTest.testMoveArrowFigure&quot;" />
+            <option value="&quot;amazons.board.MatrixBoardTest.testInitializePreset&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -145,7 +156,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="MatrixBoardTest.testMoveEmptyFigure" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="MatrixBoardTest.testInitializeRandom" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -158,7 +169,7 @@
           <list>
             <option value=":app:test" />
             <option value="--tests" />
-            <option value="&quot;amazons.board.MatrixBoardTest.testMoveEmptyFigure&quot;" />
+            <option value="&quot;amazons.board.MatrixBoardTest.testInitializeRandom&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -168,7 +179,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="PositionTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="MatrixBoardTest.testIterator" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -181,7 +192,7 @@
           <list>
             <option value=":app:test" />
             <option value="--tests" />
-            <option value="&quot;amazons.board.PositionTest&quot;" />
+            <option value="&quot;amazons.board.MatrixBoardTest.testIterator&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -191,7 +202,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="PositionTest.testHashCode" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="MatrixBoardTest.testToString" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -204,7 +215,7 @@
           <list>
             <option value=":app:test" />
             <option value="--tests" />
-            <option value="&quot;amazons.board.PositionTest.testHashCode&quot;" />
+            <option value="&quot;amazons.board.MatrixBoardTest.testToString&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -216,11 +227,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.PositionTest" />
-        <item itemvalue="Gradle.PositionTest.testHashCode" />
-        <item itemvalue="Gradle.MatrixBoardTest.testMoveAmazonFigure" />
-        <item itemvalue="Gradle.MatrixBoardTest.testMoveEmptyFigure" />
-        <item itemvalue="Gradle.MatrixBoardTest.testMoveArrowFigure" />
+        <item itemvalue="Gradle.MatrixBoardTest.testInitializeRandom" />
+        <item itemvalue="Gradle.MatrixBoardTest.testToString" />
+        <item itemvalue="Gradle.MatrixBoardTest.testIterator" />
+        <item itemvalue="Gradle.AmazonTest" />
+        <item itemvalue="Gradle.MatrixBoardTest.testInitializePreset" />
       </list>
     </recent_temporary>
   </component>
@@ -406,7 +417,14 @@
       <option name="project" value="LOCAL" />
       <updated>1702139585412</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="tache 13 réalisée">
+      <created>1702140982412</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1702140982412</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -433,6 +451,7 @@
     <MESSAGE value="fin de la tache11 mais je n'ai pas compris comment implémenter la méthoe iterator dans la classe MapBoard puisqu il était mentionné dans l'énnoncé que la méthode envoie une instance de MatrixIterator" />
     <MESSAGE value="tache12 réalisée" />
     <MESSAGE value="la classe PresetFigureGenerator est réalisée" />
-    <option name="LAST_COMMIT_MESSAGE" value="la classe PresetFigureGenerator est réalisée" />
+    <MESSAGE value="tache 13 réalisée" />
+    <option name="LAST_COMMIT_MESSAGE" value="tache 13 réalisée" />
   </component>
 </project>

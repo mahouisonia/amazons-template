@@ -6,12 +6,17 @@ import amazons.player.PlayerID;
 
 import java.util.List;
 
-public abstract  class MovableFigure {
+public abstract class MovableFigure {
+    private Position position; // Adding a Position field
 
+    public Position getPosition() {
+        return position;
+    }
 
+    public void setPosition(Position position) {
+        this.position = position;
+    }
+
+    // The existing method to get accessible positions remains unchanged
     abstract public List<Position> getAccessiblePositions(Board board);
-
-    public abstract Object getPosition();
-
-    public abstract void setPosition(Position next);
 }

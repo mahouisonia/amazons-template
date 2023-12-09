@@ -4,6 +4,8 @@ package amazons.board;
 import amazons.IllegalMoveException;
 import amazons.figures.Amazon;
 
+import amazons.figures.Figure;
+import amazons.figures.MovableFigure;
 import amazons.player.PlayerID;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -66,7 +68,7 @@ class MatrixBoardTest {
     @Test
     void testGetNumberOfRows() {
         MatrixBoard board = new MatrixBoard(2, 3);
-        assertThat(board.getNumberOfRows()).isEqualTo(3);
+        assertThat(board.getNumberofRows()).isEqualTo(3);
     }
 
     @Test
@@ -75,7 +77,7 @@ class MatrixBoardTest {
         assertThat(board.getNumberOfColumns()).isEqualTo(2);
     }
 
-    /* @Test
+     @Test
      void testInitializeEmpty() {
          testBoard.fill(new EmptyFigureGenerator());
          assertThat(testBoard.getFigure(new Position(0,0))).isSameAs(EMPTY_FIGURE);
@@ -83,7 +85,7 @@ class MatrixBoardTest {
          assertThat(testBoard.getFigure(new Position(3,2))).isSameAs(EMPTY_FIGURE);
      }
 
-     @Test
+    @Test
      void testInitializePreset() {
          setAmazons();
          Map<MovableFigure,Position> positionMap = new HashMap<>();
@@ -93,7 +95,7 @@ class MatrixBoardTest {
          positionMap.put(amazon11Player1,position11);
          positionMap.put(amazon30Player1,position30);
          positionMap.put(amazon12Player1,position12);
-         testBoard.fill(new PresetFigureGenerator(positionMap));
+         testBoard.fill(new PresetFigureGenerator((List<MovableFigure>) positionMap));
          assertThat(testBoard.getFigure(position00)).isSameAs(amazon00Player0);
          assertThat(testBoard.getFigure(position01)).isSameAs(amazon01Player0);
          assertThat(amazon32Player0.getPosition()).isEqualTo(position32);
@@ -120,7 +122,7 @@ class MatrixBoardTest {
          assertThat(nonEmptyPositions).contains(amazon11Player1.getPosition());
      }
 
- */
+
     @Test
     void testMoveEmptyFigure() {
         testBoard.setFigure(position12, EMPTY_FIGURE);
@@ -148,7 +150,7 @@ class MatrixBoardTest {
         assertThat(testBoard.getFigure(position11)).isSameAs(amazon12Player1);
     }
 
-/*
+
     @Test
     void testToString() {
         assertThat(testBoard.toString()).isEqualTo(
@@ -232,7 +234,7 @@ class MatrixBoardTest {
                 .containsExactlyInAnyOrder(amazon00Player0, amazon01Player0, amazon32Player0);
     }
 
- */
+
     @Test
     void testIsEmpty() {
         testBoard.setFigure(position32,EMPTY_FIGURE);

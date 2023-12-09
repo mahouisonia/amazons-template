@@ -10,8 +10,8 @@ import java.util.Objects;
 public class Position implements Serializable {
     public static final DataFormat POSITION_FORMAT = new DataFormat("amazons.position");
 
-    private final int x;
-    private final int y;
+    int x;
+    int y;
 
     public Position(int x, int y) {
         this.x = x;
@@ -19,49 +19,39 @@ public class Position implements Serializable {
     }
 
 
-    public int getX() {
-        return x;
+    //TODO
+    public int getX() {return this.x;}
+    public int getY() {return this.y;}
+
+
+    public boolean isOutOfBounds(int numberOfColumns, int numberOfRows){
+        return this.x < 0 || this.y < 0 || this.x >= numberOfColumns || this.y >= numberOfRows;
     }
-
-    public int getY() {
-        return y;
-    }
-
-
-    public boolean isOutOfBounds(int numberOfColumns, int numberOfRows) {
-        if(this.getX() < 0 || this.getX() >= numberOfColumns || this.getY() < 0 || this.getY()>= numberOfRows)
-            return true;
-        return false;
-    }
-
     public Position next(CardinalDirection direction) {
-        int x1 = this.getX() + direction.deltaColumn;
-        int y1 = this.getY() + direction.deltaRow;
-        return new Position(x1, y1);
+        int newX = this.x + direction.deltaColumn;
+        int newY = this.y + direction.deltaRow;
+        return new Position(newX, newY);
     }
 
-    public CardinalDirection getDirection(Position destPosition) {
-        return CardinalDirection.getDirection(x, y, destPosition.x, destPosition.y);
-    }
-
-    public String toString() {
-        return "(" + this.getX() + "," + this.getY() + ")";
-    }
-
-    public boolean equals(Object other) {
-        if (!(other instanceof Position)) {
-            return false;  // L'objet n'est pas une instance de Position
-        }
-
-        Position pos = (Position) other;  // Cast seulement après avoir vérifié l'instance
-
-        // Comparaison des attributs
-        return this.getX() == pos.getX() && this.getY() == pos.getY();
+    public CardinalDirection getDirection(Position destPosition){
+        return CardinalDirection.getDirection(x,y, destPosition.x, destPosition.y);
     }
     @Override
-    public int hashCode (){
-        return Objects.hash(x,y);
+    public String toString(){
+        return "("+this.x+","+this.y+")";
+    }
+
+    @Override
+    public boolean equals(Object other) {
+        if (this == other) return true;
+        if (other == null || getClass() != other.getClass()) return false;
+        Position position = (Position) other;
+        return x == position.x && y == position.y;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(x, y);
     }
 
 }
-

@@ -1,12 +1,11 @@
 package amazons.board;
 
 
-import amazons.IllegalMoveException;
 import amazons.figures.Figure;
 
 import java.util.Iterator;
 
-public interface Board extends Iterable <Figure> {
+public interface Board extends Iterable<Figure> {
     /**
      * Place the given figure {@code figure} at the position {@code position}. Nothing happens if {@code position}
      * is outside this board.
@@ -29,12 +28,26 @@ public interface Board extends Iterable <Figure> {
      */
     boolean isEmpty(Position position);
 
+
+
+    void moveFigure(Position startPosition, Position dstPosition);
+    void shootArrow(Position startPosition, Position arrowDstPosition);
+
+    void fill(FigureGenerator generator);
+
+
     /**
      * Return {@code true} if the specified position is out of the board.
      * @param position: position to test
      * @return {@code true} if the specified position is out of the board
      */
     boolean isOutOfBoard(Position position);
+
+    @Override
+    Iterator<Figure> iterator();
+
+    Iterator<Position> positionIterator();
+
 
     /**
      * Move the figure positioned at {@code startPosition} to {@code dstPosition}.
@@ -44,7 +57,7 @@ public interface Board extends Iterable <Figure> {
      * @throws IllegalMoveException: if position {@code startPosition} is empty, or the figure
      * at position {@code startPosition} cannot move to {@code dstPosition}
      */
-    void moveFigure(Position startPosition, Position dstPosition) throws IllegalMoveException, IllegalAccessException;
+    //void moveFigure(Position startPosition, Position dstPosition) throws IllegalMoveException;
 
     /**
      * Place an arrow at  {@code dstPosition}. The arrow originates from {@code startPosition}
@@ -53,9 +66,8 @@ public interface Board extends Iterable <Figure> {
      * @throws IllegalMoveException: if {@code dstPosition} is not empty occupied or there is no amazon
      * at position {@code startPosition} or it is not legal for the amazon to shoot an arrow to {@code dstPosition}
      */
-    void shootArrow(Position startPosition, Position arrowDstPosition) throws IllegalMoveException;
-    void fill(FigureGenerator generator);
-    Iterator<Position> positionIterator();
+    //void shootArrow(Position startPosition, Position arrowDstPosition) throws IllegalMoveException;
+
 
 
 

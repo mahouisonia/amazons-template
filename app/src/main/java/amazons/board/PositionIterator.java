@@ -47,4 +47,3 @@ public class PositionIterator implements Iterator<Position> {
         return position;
     }
 }
-

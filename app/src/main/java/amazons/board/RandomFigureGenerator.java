@@ -1,14 +1,12 @@
 package amazons.board;
 
-import amazons.board.FigureGenerator;
-import amazons.board.Position;
+import amazons.figures.Amazon;
 import amazons.figures.EmptyFigure;
 import amazons.figures.Figure;
 import amazons.figures.MovableFigure;
+import amazons.player.PlayerID;
 
-import java.util.List;
-import java.util.Random;
-import java.util.Iterator;
+import java.util.*;
 
 public class RandomFigureGenerator implements FigureGenerator {
     private Random random;
@@ -21,19 +19,63 @@ public class RandomFigureGenerator implements FigureGenerator {
         this.positionIterator = positionIterator;
     }
 
-    @Override
-    public Figure nextFigure(Position position) {
-        if (positionIterator.hasNext()) {
-            MovableFigure randomFigure = getRandomFigure();
-            randomFigure.setPosition(positionIterator.next());
-            return (Figure) randomFigure;
+    private List<Amazon> queenList() {
+        List<Amazon> myList = new ArrayList<>();
+        PositionIterator z = (PositionIterator) positionIterator;
+
+        while (myList.size() < 8) {
+            int x = random.nextInt(z.getNumberOfColumns());
+            int y = random.nextInt(z.getNumberOfRows());
+            Position newPosition = new Position(x, y);
+
+            boolean positionExists = false;
+            for (Amazon existingQueen : myList) {
+                if (existingQueen.getPosition().equals(newPosition)) {
+                    positionExists = true;
+                    break;
+                }
+            }
+
+            if (!positionExists) {
+                PlayerID player = (myList.size() <= 3) ? PlayerID.PLAYER_ZERO : PlayerID.PLAYER_ONE;
+                Amazon queen = new Amazon(newPosition, player);
+                myList.add(queen);
+            }
         }
-        return EmptyFigure.EMPTY_FIGURE;
+        return myList;
     }
 
-    private MovableFigure getRandomFigure() {
-        int randomIndex = random.nextInt(figures.size());
-        return figures.remove(randomIndex);
+
+//    public Figure nextFigure(Position p) {
+//
+//
+//            Amazon tempQueen = new Amazon(p, PlayerID.PLAYER_ZERO);
+//            Amazon tempQueen2 = new Amazon(p, PlayerID.PLAYER_ONE);
+//
+//            boolean foundInList = false;
+//            List<Amazon> myList = queenList();
+//            for (Amazon queen : myList) {
+//                if (queen.getPosition().equals(tempQueen.getPosition()) || queen.getPosition().equals(tempQueen2.getPosition())) {
+//                    return queen;
+//                }
+//            }
+//
+//            if (!foundInList) {
+//                return EmptyFigure.EMPTY_FIGURE;
+//            }
+//
+//        return EmptyFigure.EMPTY_FIGURE;
+//    }
+
+
+    @Override
+    public Figure nextFigure(Position p) {
+        for (MovableFigure f : queenList()) {
+            if (f.getPosition().equals(p)) {
+                return (Figure) f;
+            }
+        }
+        return EmptyFigure.EMPTY_FIGURE;
     }
 
 }
