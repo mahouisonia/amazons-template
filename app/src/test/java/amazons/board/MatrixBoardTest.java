@@ -86,44 +86,7 @@ class MatrixBoardTest {
         assertThat(testBoard.getFigure(new Position(1,1))).isSameAs(EMPTY_FIGURE);
         assertThat(testBoard.getFigure(new Position(3,2))).isSameAs(EMPTY_FIGURE);
     }
-   /* @Test
-    void testInitializePreset() {
-        setAmazons();
-        Map<MovableFigure,Position> positionMap = new HashMap<>();
-        positionMap.put(amazon00Player0,position00);
-        positionMap.put(amazon01Player0,position01);
-        positionMap.put(amazon32Player0,position32);
-        positionMap.put(amazon11Player1,position11);
-        positionMap.put(amazon30Player1,position30);
-        positionMap.put(amazon12Player1,position12);
-        testBoard.fill(new PresetFigureGenerator(positionMap.getOrDefault());
-        assertThat(testBoard.getFigure(position00)).isSameAs(amazon00Player0);
-        assertThat(testBoard.getFigure(position01)).isSameAs(amazon01Player0);
-        assertThat(amazon32Player0.getPosition()).isEqualTo(position32);
-        assertThat(testBoard.getFigure(position11)).isSameAs(amazon11Player1);
-        assertThat(testBoard.getFigure(position30)).isSameAs(amazon30Player1);
-        assertThat(testBoard.getFigure(new Position(2,1))).isSameAs(EMPTY_FIGURE);
-        assertThat(testBoard.getFigure(new Position(3,1))).isSameAs(EMPTY_FIGURE);
-    }
 
-    @Test
-    void testInitializeRandom() {
-        List<MovableFigure> figures  = List.of(amazon11Player1,amazon00Player0,amazon01Player0,amazon12Player1,amazon32Player0,amazon30Player1);
-        testBoard.fill(new RandomFigureGenerator(random,figures,testBoard.positionIterator()));
-        List<Position> nonEmptyPositions = new ArrayList<>();
-        testBoard.positionIterator().forEachRemaining(p -> {if(!testBoard.isEmpty(p)) nonEmptyPositions.add(p);});
-        assertThat(nonEmptyPositions.stream().map(p -> testBoard.getFigure(p))).containsExactlyInAnyOrder(
-                amazon00Player0, amazon01Player0, amazon32Player0,
-                amazon30Player1, amazon12Player1, amazon11Player1);
-        assertThat(nonEmptyPositions).contains(amazon00Player0.getPosition());
-        assertThat(nonEmptyPositions).contains(amazon01Player0.getPosition());
-        assertThat(nonEmptyPositions).contains(amazon32Player0.getPosition());
-        assertThat(nonEmptyPositions).contains(amazon30Player1.getPosition());
-        assertThat(nonEmptyPositions).contains(amazon12Player1.getPosition());
-        assertThat(nonEmptyPositions).contains(amazon11Player1.getPosition());
-    }
-
-*/
     @Test
     void testMoveEmptyFigure() {
         testBoard.setFigure(position12,EMPTY_FIGURE);

@@ -5,10 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f0ac77af-9bf1-47cc-a9a0-0dd0e10750b5" name="Changes" comment="fin tache 19">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/amazons/player/PlayerBasic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/amazons/player/PlayerGreedy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/amazons/player/PlayerRandom.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/viewer/BoardView.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/viewer/BoardView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/viewer/FieldView.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/viewer/FieldView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/java/amazons/board/MatrixBoardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/amazons/board/MatrixBoardTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +103,7 @@
       <recent name="amazons.board" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.TP8 [run]">
+  <component name="RunManager" selected="Gradle.MatrixBoardTest">
     <configuration name="AmazonTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -218,10 +219,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.MatrixBoardTest" />
         <item itemvalue="Gradle.TP8 [run]" />
         <item itemvalue="Gradle.MoveTest" />
         <item itemvalue="Gradle.AmazonTest" />
-        <item itemvalue="Gradle.MatrixBoardTest" />
         <item itemvalue="Gradle.MatrixBoardTest.testInitializeRandom" />
       </list>
     </recent_temporary>
@@ -468,5 +469,8 @@
     <MESSAGE value="fin de la tache 15, 16, 17," />
     <MESSAGE value="fin tache 19" />
     <option name="LAST_COMMIT_MESSAGE" value="fin tache 19" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/amazons_template$TP8__run_.ic" NAME="TP8 [run] Coverage Results" MODIFIED="1702234734942" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
